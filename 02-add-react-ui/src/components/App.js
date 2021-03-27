@@ -48,7 +48,7 @@ class App extends Component {
     return (
       <section className="Section--Results">
         {isSuccessful ? <h2>Found number</h2> : <h2>Number not found</h2>}
-        <p>Search performed {searchCount} times</p>
+        <p>Took {searchCount} tries</p>
       </section>
     );
   }
