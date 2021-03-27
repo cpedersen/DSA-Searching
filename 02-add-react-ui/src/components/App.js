@@ -25,7 +25,7 @@ class App extends Component {
     number.value = "";
 
     const { index, numberOfSearches } = SearchService.binarySearch(input);
-    // const { index, numberOfSearches } = SearchService.linearSearch(input);
+    //const { index, numberOfSearches } = SearchService.linearSearch(input);
 
     this.setState({
       ...this.state,

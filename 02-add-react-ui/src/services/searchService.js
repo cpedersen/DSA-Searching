@@ -42,6 +42,9 @@ const SearchService = {
       } else if (item > value) {
         result.numberOfSearches++;
         return binarySearch(array, value, start, index - 1);
+      } else {
+        // Number not found
+        return -1;
       }
     }
     result.index = binarySearch(sorted, value);
