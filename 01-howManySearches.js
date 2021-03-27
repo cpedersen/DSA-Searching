@@ -64,18 +64,14 @@
 //      return -1 <--- didn't find '16'
 
 function binarySearch(array, value, start, end) {
-  // start = 0
   var start = start === undefined ? 0 : start;
-  // end = 10
   var end = end === undefined ? array.length : end;
 
   if (start > end) {
     return -1;
   }
 
-  // index = 2
   const index = Math.floor((start + end) / 2);
-  // item == 6
   const item = array[index];
 
   console.log(start, end);
@@ -87,3 +83,6 @@ function binarySearch(array, value, start, end) {
     return binarySearch(array, value, start, index - 1);
   }
 }
+
+let array = [3, 5, 6, 8, 11, 12, 14, 15, 17, 18];
+console.log(binarySearch(array, 16, 0, 9));
